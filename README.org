@@ -11,7 +11,7 @@ Please use the following command to install k3s cluster on single node.
 
 AWX is an open source web application that provides a user interface, REST API, and task engine for Ansible.
 It's the open source version of the Ansible Tower. The AWX allows you to manage Ansible playbooks, inventories, and schedule jobs to run using the web interface.
-We will be using the recommended option to install AWX is in Kubernetes with [awx-operator](https://guthub.com/ansible/awx-operator).
+We will be using the recommended option to install AWX is in Kubernetes with [[https://guthub.com/ansible/awx-operator][awx-operator]].
 
 ** Step 1 - Create awx operator and custom requirements file.
 Download `awx-operator` and create `awx.yaml` file to add custom requirements.
@@ -76,7 +76,7 @@ This can be done by running the following command:
 #+end_src
 
 ** Login to `awx` web GUI.
-Once deployed, the AWX instance will be accessible url [http://localhost:32245](http://localhost:32245)
+Once deployed, the AWX instance will be accessible url [[http://localhost:32245][http://localhost:32245]]
 
 By default, the admin user is `admin` and the password is available in the <resourcename>-admin-password secret.
 To retrieve the admin password, run the following command:
