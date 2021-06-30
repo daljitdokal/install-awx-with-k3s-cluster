@@ -76,12 +76,16 @@ This can be done by running the following command:
 #+end_src
 
 ** Login to `awx` web GUI.
-Once deployed, the AWX instance will be accessible url [[http://localhost:32245][http://localhost:32245]]
+Enter the following command to get the URL to access your new AWX instance.
+
+#+begin_src
+echo "http://localhost:$(sudo k3s kubectl get service awx-service -n awx -o yaml | grep nodePort | awk '{print $2}' )"
+#+end_src
 
 By default, the admin user is `admin` and the password is available in the <resourcename>-admin-password secret.
 To retrieve the admin password, run the following command:
 #+begin_src
- sudo k3s kubectl get secret awx-admin-password -o jsonpath="{.data.password}" | base64 --decode
+ sudo k3s kubectl get secret awx-admin-password -o jsonpath="{.data.password}" -n awx | base64 --decode
 #+end_src
 
 You just completed the most basic install of an AWX instance. Congratulations!!!!
