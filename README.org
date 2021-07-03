@@ -1,4 +1,4 @@
-* Install `AWX` with `k3s` cluster
+* Install `[[https://www.ansible.com/products/awx-project/faq][awx]]` with `[[https://k3s.io][k3s]]` cluster
 [[https://k3s.io][k3s]] is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances. K3s is packaged as a single <40MB binary that reduces the dependencies and steps needed to install, run and auto-update a production Kubernetes cluster.
 
 Please use the following command to install k3s cluster on single node.
