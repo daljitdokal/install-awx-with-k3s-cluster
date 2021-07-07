@@ -29,6 +29,9 @@ kind: AWX
 metadata:
   name: awx
 spec:
+  ee_extra_volume_mounts: |
+    - name: backup
+      mountPath: /mnt/backup
   service_type: NodePort
   ingress_type: ingress
   hostname: awx.example.com
