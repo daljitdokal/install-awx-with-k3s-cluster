@@ -6,7 +6,7 @@ metadata:
 spec:
   service_type: NodePort
   ingress_type: ingress
-  hostname: awx.example.com
+  hostname: awx.piserver.com
   service_labels: |
     environment: production
   web_resource_requirements:
