@@ -680,7 +680,6 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: awx-operator
-    namespace: default
 roleRef:
   kind: ClusterRole
   name: awx-operator
@@ -691,7 +690,6 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: awx-operator
-  namespace: default
 
 ---
 apiVersion: apps/v1
